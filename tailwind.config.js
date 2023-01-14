@@ -4,10 +4,17 @@ const { thonUI, thonUIContent } = require('thon-ui/plugin');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: 'src/app/**/*.tsx'[thonUIContent()],
+  content: ['app/**/*.tsx', 'src/**/*.tsx', thonUIContent()],
   jit: true,
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        code: ['Courier Prime', 'monospace'],
+      }
+
+    },
   },
+}, {
   plugins: [thonUI()],
 }
