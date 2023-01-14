@@ -6,9 +6,9 @@ export default function MainHeader() {
   return (
     <header
       className={`lg:h-screen relative lg:fixed lg:w-[34.25rem]
-    left-0 top-0
-    pt-8 pb-6 px-7 lg:pt-0 lg:pb-0
-    flex flex-col justify-center items-center 
+      left-0 top-0
+      pt-8 pb-6 px-7 lg:pt-0 lg:pb-0
+      flex flex-col justify-center items-center 
     bg-[#24292F]`}
     >
       <div className="flex gap-3 items-center">
