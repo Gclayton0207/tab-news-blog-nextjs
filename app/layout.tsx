@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-page-custom-font */
+import MainFooter from "@/shared/components/Footer/MainFooter";
 import MainHeader from "@/shared/components/MainHeader/MainHeader";
 import React from "react";
 import "thon-ui/core/base.css";
@@ -9,10 +10,7 @@ export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
       <head>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale 1.0"
-        ></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -28,9 +26,13 @@ export default function RootLayout({ children }: Props) {
           rel="stylesheet"
         />
       </head>
-      <body>
+      <body className="lg:grid lg:grid-flow-col xl:grid-flow-col xl:pl-[34.25rem] lg:min-h-[96vh]">
         <MainHeader />
-        {children}
+        <main className="p-10">
+          {children}
+
+          <MainFooter />
+        </main>
       </body>
     </html>
   );
