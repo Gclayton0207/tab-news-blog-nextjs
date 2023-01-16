@@ -2,6 +2,7 @@
 import MainFooter from "@/shared/components/Footer/MainFooter";
 import MainHeader from "@/shared/components/MainHeader/MainHeader";
 import React from "react";
+import '../src/homepage/css/homepage.css';
 import "thon-ui/core/base.css";
 type Props = {
   children: React.ReactNode;
